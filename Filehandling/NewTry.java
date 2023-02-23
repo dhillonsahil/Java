@@ -1,7 +1,6 @@
 package Filehandling;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.Writer;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -14,6 +13,7 @@ public class NewTry {
             FileWriter writer = new FileWriter(file);
             for(String user[]:users){
                 writer.write(user[0] + "," + user[1] + "\n");
+                // writer.close();
             }
             writer.close();
             Scanner scan = new Scanner(file);
@@ -22,8 +22,10 @@ public class NewTry {
                     String user[] = line.split(",");
                     System.out.println("username : "+ user[0]);
                 }
+                scan.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            
     }
 }

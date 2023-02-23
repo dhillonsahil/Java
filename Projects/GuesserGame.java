@@ -14,6 +14,7 @@ class Guesser{
         max=scan.nextInt();
         System.out.println("Guess a Number ! ");
         GuessedNumber= scan.nextInt();
+        scan.close();
         return GuessedNumber;
     }
 }
@@ -26,6 +27,7 @@ class Players{
     protected void attemptGuess(){
         Scanner scan = new Scanner(System.in);
         playerGuessedNumber = scan.nextInt();
+        scan.close();
     }
 
     public int getPlayerGuessedNumber() {
@@ -80,5 +82,6 @@ public class GuesserGame{
         if(!hasWon){
             System.out.println("Every player lost the game");
         }
+        scan.close();
     }
 }

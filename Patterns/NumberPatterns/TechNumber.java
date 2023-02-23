@@ -27,5 +27,6 @@ public class TechNumber{
         else{
             System.out.println("not a tech number");
         }
+        scan.close();
     }
 }

@@ -2,6 +2,7 @@ package Oops;
 public class ConstructorChaining{
     public static void main(String []args){
         JavaTest jt = new JavaTest("sahil");
+        jt.disp();
     }
 }
 class Test{
@@ -17,5 +18,8 @@ class JavaTest extends Test{
     JavaTest(String name){
         this();
         System.out.println("Hi " +name + " welcome to JavaTest Constructor");
+    }
+    void disp(){
+        System.out.println("Hello");
     }
 }
