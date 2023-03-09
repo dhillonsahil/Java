@@ -5,7 +5,7 @@ public class TowerOfHanoi {
         char source = 'A';
         char helper = 'B';
         char destination = 'C';
-        int n =2;
+        int n =3;
         tuh(n, source, destination, helper);
     }
     public static void tuh(int n,char source, char destination ,char helper){
