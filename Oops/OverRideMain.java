@@ -25,13 +25,13 @@ class Parent{
     }
 }
 
-class Child extends Parent{
+class Child1 extends Parent{
     int y = 30;
     {
         methodTwo();
         System.out.println("Child class Instance block");
     }
-    Child(){
+    Child1(){
         System.out.println("Child class Constructor");
     }
     void methodTwo(){
@@ -39,7 +39,7 @@ class Child extends Parent{
     }
     int e = 20;
     public static void main(String[] args) {
-        Child c = new Child();
+        Child1 c = new Child1();
         System.out.println("Child class Main()");
     }
 

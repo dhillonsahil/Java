@@ -1,5 +1,5 @@
 package Arrays;
-public class TrySort{
+public class TrySort1{
     public static void main(String[] args) {
         int nums[]={6,3,9,7,5};
         for(int i=0;i<nums.length;i++){

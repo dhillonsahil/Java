@@ -6,9 +6,9 @@ class Heart{
     }
 }
 
-class Student{
+class Student1{
     private Heart h;
-    public Student(Heart h){
+    public Student1(Heart h){
         this.h = h;
     }
     public void call(){
@@ -18,7 +18,7 @@ class Student{
 public class HasA_DependencyInjec{
     public static void main(String[] args) {
         Heart h = new Heart();
-        Student s = new Student(h);
+        Student1 s = new Student1(h);
         s.call();
     }
 }

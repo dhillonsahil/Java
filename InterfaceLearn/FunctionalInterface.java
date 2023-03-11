@@ -4,10 +4,13 @@ public class FunctionalInterface {
         
     }
 }
-interface Student{
+interface Student1{
     void hello();
     
 }
 abstract class Hey{
     private String name;
-}
+    public void displayname()
+{
+    System.out.println(name);
+}}
