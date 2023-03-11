@@ -1,13 +1,13 @@
 package Oops;
 public class Encapsulation1{
     public static void main(String[] args) {
-        Student sahil = new Student();
+        Student1 sahil = new Student1();
         sahil.setName("sahil");
         sahil.setRollNo(30);
         System.out.println(sahil.getName() + " "+ sahil.getRollNo());
     }
 }
-class Student{
+class Student1{
     private String name;
     private int rollNo;
     public String getName() {

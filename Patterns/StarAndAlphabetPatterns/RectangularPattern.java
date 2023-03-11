@@ -1,3 +1,5 @@
+package Patterns.StarAndAlphabetPatterns;
+
 import java.util.Scanner;
 
 public class RectangularPattern {

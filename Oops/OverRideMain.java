@@ -6,13 +6,13 @@ public class OverRideMain {
 }
 
 
-class Parent{
+class Parent1{
     int x = 100;
     {
         methodOne();
         System.out.println("Parent class Instance block");
     }
-    Parent(){
+    Parent1(){
         System.out.println("Parent class const");
     }
     void methodOne(){
@@ -20,12 +20,12 @@ class Parent{
     }
     int j=200;
     public static void main(String[] args) {
-        Parent p = new Parent();
+        Parent1 p = new Parent1();
         System.out.println("Parent class main()");
     }
 }
 
-class Child1 extends Parent{
+class Child1 extends Parent1{
     int y = 30;
     {
         methodTwo();

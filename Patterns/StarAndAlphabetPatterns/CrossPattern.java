@@ -1,3 +1,4 @@
+package Patterns.StarAndAlphabetPatterns;
 public class CrossPattern{
     public static void main(String[] args) {
         int n = 5;

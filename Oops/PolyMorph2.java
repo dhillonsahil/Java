@@ -9,22 +9,22 @@ public class PolyMorph2 {
 }
 
 class Airport{
-    void display(Aeroplane aero){
+    void display(Aeroplane1 aero){
         aero.takeoff();
         aero.fly();
         System.out.println("----------------------------------------");
     }
 }
 
-class Aeroplane{
+class Aeroplane1{
     void takeoff(){
-        System.out.println("Aeroplane is taking off");
+        System.out.println("Aeroplane1 is taking off");
     }
     void fly(){
-        System.out.println("Aeroplane is flying");
+        System.out.println("Aeroplane1 is flying");
     }
 }
-class CargoPlane extends Aeroplane{
+class CargoPlane extends Aeroplane1{
 void takeoff(){
         System.out.println(" CargoPlane is taking off");
     }
@@ -33,7 +33,7 @@ void takeoff(){
     }
 }
 
-class PassengerPlane extends Aeroplane{
+class PassengerPlane extends Aeroplane1{
     void takeoff(){
         System.out.println(" Passenger Plane is taking off");
     }

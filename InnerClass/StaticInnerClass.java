@@ -2,22 +2,22 @@ package InnerClass;
 
 public class StaticInnerClass {
     public static void main(String[] args) {
-       Car obj =new Car();
-       Car.Engine obj2 =new  Car.Engine(); // method 1
+       Car1 obj =new Car1();
+       Car1.Engine obj2 =new  Car1.Engine(); // method 1
        obj2.disp2();
 
-        // Car.Engine obj1 = new Car().new Engine(); // method 2 here car object is anonymous
+        // Car1.Engine obj1 = new Car1().new Engine(); // method 2 here Car1 object is anonymous
     }
 }
 
 
-class Car{
+class Car1{
     void disp(){
-        System.out.println("In car outer class.");
+        System.out.println("In Car1 outer class.");
     }
     static class Engine{
         void disp2(){
-            System.out.println("in car inner class");
+            System.out.println("in Car1 inner class");
         }
     }
 }

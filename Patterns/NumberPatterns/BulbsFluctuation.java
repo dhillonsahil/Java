@@ -1,3 +1,4 @@
+package Patterns.NumberPatterns;
 import java.util.Scanner;
 
 public class BulbsFluctuation {
