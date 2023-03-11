@@ -3,7 +3,7 @@ package Oops;
 public class PolyMorph2 {
     public static void main(String[] args) {
         Airport ref = new Airport();
-        ref.display(new CargoPlane());             // run time polymorphism same method for both class
+        ref.display(new CargoPlane1());             // run time polymorphism same method for both class
         ref.display(new PassengerPlane());
     }
 }
@@ -24,12 +24,12 @@ class Aeroplane1{
         System.out.println("Aeroplane1 is flying");
     }
 }
-class CargoPlane extends Aeroplane1{
+class CargoPlane1 extends Aeroplane1{
 void takeoff(){
-        System.out.println(" CargoPlane is taking off");
+        System.out.println(" CargoPlane1 is taking off");
     }
     void fly(){
-        System.out.println(" CargoPlane is flying");
+        System.out.println(" CargoPlane1 is flying");
     }
 }
 
