@@ -4,7 +4,7 @@ public class PolyMorph2 {
     public static void main(String[] args) {
         Airport ref = new Airport();
         ref.display(new CargoPlane1());             // run time polymorphism same method for both class
-        ref.display(new PassengerPlane());
+        ref.display(new PassengerPlane1());
     }
 }
 
@@ -33,7 +33,7 @@ void takeoff(){
     }
 }
 
-class PassengerPlane extends Aeroplane1{
+class PassengerPlane1 extends Aeroplane1{
     void takeoff(){
         System.out.println(" Passenger Plane is taking off");
     }
