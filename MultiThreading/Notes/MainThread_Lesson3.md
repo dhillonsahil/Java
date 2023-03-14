@@ -42,3 +42,5 @@ public class PrintPriorityThread {
 }
 
 ```
+
+* we can change the name and priority of main also. by default priority of main is 5.
