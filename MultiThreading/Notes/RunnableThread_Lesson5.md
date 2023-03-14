@@ -33,3 +33,12 @@ class MyThread1 implements Runnable{
 
 we are kind of saying to thread that i have given the task in the run method of the class , this is the address of the object. you can do it from there.
 we are giving life to thread by using the start method.
+
+> **The Best Approach** :- The benifit of this approach is that if we want to make our class as child(means our class in inheriting another class) so at the same time we can implement the Runnable interface meanwhile when are extending thread we can't extend another class so it can lead to code redundancy(duplicate code).
+```java
+class Calc extends Demo implements Thread{}
+```
+
+## Thread Scheduler
+* If multiple threads are waiting to execute , then which will execute 2st is decided by the Thread Scheduler which is part ofJVM.
+* In the case of Multithreading we can't predict the exact output , only possible output we can expect.
