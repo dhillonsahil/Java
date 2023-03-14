@@ -6,7 +6,7 @@ As we know we performs some tasks with the help of computer.
 
 Programs are first loaded in the RAM and then the instruction is sent to the processor. The tasks are executed by the processor but they are executed in the RAM.
 
-![Multi tasking](/src/MultiThreading/Notes/Processbased.jpg "Multi tasking")
+![Multi tasking](https://github.com/dhillonsahil/Java/blob/main/MultiThreading/Notes/Processbased.jpg "Multi tasking")
 
 When there are multiple activities suppose we are attending live video class on zoom , making some notes on Notepad (2nd task) and Replying some one on whatsapp (3rd task).
 
