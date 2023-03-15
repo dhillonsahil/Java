@@ -209,3 +209,15 @@ Focus is important
 ```
 
 > In Java, interrupt() is a method defined in the Thread class that is used to interrupt a thread. When a thread is interrupted, it sets an internal flag that indicates that the thread has been interrupted, and the thread can then choose to either stop executing or continue running.  The interrupt() method can be called on a thread from any other thread to request that it be interrupted. If the target thread is currently blocked in an operation such as sleep() or wait(), it will immediately throw an InterruptedException when it is interrupted. If the target thread is not currently blocked, it will still be interrupted, but it is up to the thread's code to decide how to handle the interruption.
+
+Here are some common use cases for interrupts in Java:
+
+1. Cancelling a task: If a long-running task is taking too much time to complete, you can interrupt the thread that's executing the task to cancel it. This is particularly useful in applications where the user may want to cancel a task that's running in the background.
+
+3. Handling timeouts: Interrupts can be used to handle timeouts in applications. For example, if a thread is waiting for input from a network socket and the input doesn't arrive within a certain time frame, the thread can be interrupted and the application can handle the timeout accordingly.
+
+3. Coordinating threads: Interrupts can be used to coordinate the execution of multiple threads. For example, if one thread is waiting for another thread to complete a task, it can interrupt the other thread to signal that it's ready to proceed.
+
+4. Thread termination: Interrupts can be used to terminate a thread that's running indefinitely. For example, if a thread is stuck in an infinite loop, you can interrupt the thread to stop it from executing.
+
+In summary, interrupts are a powerful tool for managint threads in Java.
