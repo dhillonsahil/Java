@@ -42,3 +42,10 @@ class Calc extends Demo implements Thread{}
 ## Thread Scheduler
 * If multiple threads are waiting to execute , then which will execute 2st is decided by the Thread Scheduler which is part ofJVM.
 * In the case of Multithreading we can't predict the exact output , only possible output we can expect.
+
+## run() method
+The run method is available in the thread class Constructed using a seperate Runnable object. Otherwise , this method does nothing and returns. We can call the run() method multiple times.
+
+The run() method can be called in two ways which are as follows :
+1. Using the start() method.
+2. Using the run() method.
