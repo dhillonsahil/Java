@@ -1,3 +1,5 @@
+// this code results into deadlock
+
 package MultiThreading;
 
 public class WaitSleep {
@@ -14,6 +16,7 @@ public class WaitSleep {
         th1.start();
     }
 }
+
 
 class MyThread7 implements Runnable{
     private final Object lock;
@@ -38,6 +41,7 @@ class MyThread7 implements Runnable{
     }
     
 }
+
 
 class MyThread8 implements Runnable{
     private final Object lock;
