@@ -28,5 +28,6 @@ class MultiThread implements Runnable{
             }
             System.out.println(name + " exiting");
         }
+        
     }
 }
