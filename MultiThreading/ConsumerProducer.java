@@ -2,17 +2,17 @@ package MultiThreading;
 
 public class ConsumerProducer {
     public static void main(String[] args) {
-        Queue a = new Queue();
-        Producer p = new Producer(a);
-        Consumer q = new Consumer(a);
+        Queue1 a = new Queue1();
+        Producer1 p = new Producer1(a);
+        Consumer1 q = new Consumer1(a);
         p.start();
         q.start();
     }
 }
 
-class Producer extends Thread{
-    Queue q;
-    Producer(Queue b){
+class Producer1 extends Thread{
+    Queue1 q;
+    Producer1(Queue1 b){
         q=b;
     }
     public void run(){
@@ -23,7 +23,7 @@ class Producer extends Thread{
     }
 
 }
-class Queue{
+class Queue1{
     int x;
     public void put(int a){
         x=a;
@@ -34,9 +34,9 @@ class Queue{
     }
 }
 
-class Consumer extends Thread{
-    Queue q;
-    Consumer(Queue a){
+class Consumer1 extends Thread{
+    Queue1 q;
+    Consumer1(Queue1 a){
         q=a;
     }
     public void run(){
