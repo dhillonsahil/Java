@@ -133,6 +133,7 @@ public class Launch_AL2 {
 1. The ArrayList Class Maintains the insertion of order and is non-synchronized.
 1. The elements stored in the array are randomly accessed.
 1. Data is inserted By shifting(for any index)
+
 ## Linked List
 1. Order of insertion is preserved(maintained)
 1. duplicates also added
@@ -185,6 +186,7 @@ In a quque we can't insert any data in between.
 1. dynamic in size
 1. Duplicates allowed
 1. Homogenous and Heterogenous type of data can be stored
+1. Order of insertion is preserved
 
 ```java
 package LearnCollection;
@@ -222,3 +224,122 @@ The add() method adds an element to the tail of the queue, and throws an Illegal
 The offer() method, on the other hand, adds an element to the tail of the queue and returns a boolean indicating whether or not the element was successfully added. If the queue is at its capacity and the element cannot be added, offer() returns false.
 
 In offer may be added or not.
+
+## PriorityQueue
+1. Implements Queue interface
+1. index based accessing is not allowed
+1. adds data at rare end
+1. Order of insertion is not preserved(not also in sorted)
+1. behind the scene it follows MinHeap data structure
+1. Only homogenous type of data is stored.
+> It holds the elements or objects which are to be processed by their priorities. PriorityQueque don't allow null value to be stored in the queue.
+make sure the least value if at the top(first object) / available at the front end.
+
+
+## TreeSet
+Tree set implements SortedSet Interface which extends The set Interface
+1. Order of of insertion is not preserved (internally follows binary search tree)
+1. Follows(in - order traversal) LVR(LEft Value Right). 
+1. Search Efficient (fast search operation because we don't have to check each node)
+1. Duplicates not allowed
+1. null value should not be added also
+
+
+```java
+package LearnCollection;
+import java.util.*;
+
+public class Launch_TS1 {
+    public static void main(String[] args) {
+       TreeSet ts = new TreeSet(); 
+       ts.add(10);
+       ts.add(100);
+       ts.add(20);
+       ts.add(5);
+       ts.add(9);
+       ts.add(4);
+       System.out.println(ts.higher(10));
+       System.out.println(ts.ceiling(10));  // returns 10 because 10 is available
+       System.out.println(ts.floor(10));    // returns 10 because 10 is available
+    }
+}
+
+```
+
+## hashset
+1. index based accessing is not allowed
+1. order of insertion is not preserved
+1. no duplicates allowed
+
+```java
+package LearnCollection;
+
+import java.util.*;
+
+public class Launch_HS1 {
+    public static void main(String[] args) {
+        HashSet hs1= new HashSet();
+        hs1.add(10);
+        hs1.add(20);
+        hs1.add(5);
+        hs1.add(5000);
+        System.out.println(hs1);
+        System.out.println(hs1.contains(51));
+    }
+}
+
+```
+
+## iterator
+```java
+package LearnCollection;
+
+import java.util.*;
+
+
+public class Launch_HS1 {
+    public static void main(String[] args) {
+        HashSet hs1= new HashSet();
+        hs1.add(10);
+        hs1.add(20);
+        hs1.add(5);
+        hs1.add(5000);
+        System.out.println(hs1);
+        System.out.println(hs1.contains(51));
+        Iterator itr = hs1.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next())
+        }
+    }
+}
+
+```
+
+## listIterator
+```java
+package LearnCollection;
+
+import java.util.*;
+
+
+public class Launch_HS1 {
+    public static void main(String[] args) {
+        HashSet hs1= new HashSet();
+        hs1.add(10);
+        hs1.add(20);
+        hs1.add(5);
+        hs1.add(5000);
+        System.out.println(hs1.contains(51));
+        Iterator itr = hs1.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
+        ArrayList alt = new ArrayList<>();
+        ListIterator litr = alt.listIterator();
+        ListIterator litr1 = alt.listIterator(5);
+        System.out.println(litr.hasPrevious());;
+
+    }
+}
+
+```
