@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Launch_AL2 {
     public static void main(String[] args) {
-        ArrayList al =new ArrayList();
+        ArrayList<Integer> al =new ArrayList<>();
         al.add(100);
         al.add(200);
         al.add(300);
