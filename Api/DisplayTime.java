@@ -17,5 +17,10 @@ public class DisplayTime {
         java.sql.Date dt2 = new java.sql.Date(dt.getTime());
         System.out.println(dt2);
 
+        //Type 4
+        java.util.Calendar cal = java.util.Calendar.getInstance();
+        System.out.println(cal.getTime());
+
+
     }
 }
