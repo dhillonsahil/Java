@@ -12,6 +12,7 @@ public static void main(String[] args) throws Exception {
     Cricketer cr = (Cricketer)ois.readObject();
     // System.out.println(cr);
     cr.disp();
+    ois.close();
     System.out.println("Done");
 }
 }
